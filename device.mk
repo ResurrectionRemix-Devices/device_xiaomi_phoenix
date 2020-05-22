@@ -35,6 +35,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_PACKAGES += \
     AntHalService
 
+# ANXCamera
+$(call inherit-product-if-exists, vendor/aeonax/ANXCamera/anx-vendor.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
