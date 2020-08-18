@@ -6,11 +6,18 @@
 
 $(call inherit-product, device/xiaomi/phoenix/device.mk)
 
-# Inherit some common AOSiP stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+# Inherit some common RR stuff.
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+
+# RR Stuffs
+TARGET_FACE_UNLOCK_SUPPORTED := true
+RR_BUILDTYPE := Official
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosip_phoenix
+PRODUCT_NAME := rr_phoenix
 PRODUCT_DEVICE := phoenix
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi K30

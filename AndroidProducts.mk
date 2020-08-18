@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosip_phoenix.mk
+    $(LOCAL_DIR)/rr_phoenix.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosip_phoenix-user \
-    aosip_phoenix-userdebug \
-    aosip_phoenix-eng
+    rr_phoenix-user \
+    rr_phoenix-userdebug \
+    rr_phoenix-eng
